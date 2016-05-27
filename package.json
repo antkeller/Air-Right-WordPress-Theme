@@ -1,0 +1,29 @@
+{
+  "name": "MervinMfg-WordPress-Theme-Template",
+  "description": "Starter theme template for custom Wordpress theme development.",
+  "version": "1.0.1",
+  "private": true,
+  "homepage": "https://github.com/MervinMfg/MervinMfg-WordPress-Theme-Template",
+  "contributors": [
+    {
+      "name": "Brian Behrens (http://brainbrian.com)"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MervinMfg/MervinMfg-WordPress-Theme-Template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MervinMfg/MervinMfg-WordPress-Theme-Template/issues"
+  },
+  "dependencies": {
+    "grunt": "~0.4.5",
+    "grunt-cli": "~0.1.13",
+    "grunt-shell": "~1.1.1",
+    "grunt-contrib-sass": "~0.8.1",
+    "grunt-contrib-concat": "~0.5.0",
+    "grunt-contrib-cssmin": "~0.10.0",
+    "grunt-contrib-uglify": "~0.6.0",
+    "grunt-contrib-watch": "~0.6.1"
+  }
+}
