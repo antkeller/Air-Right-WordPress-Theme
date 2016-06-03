@@ -8,7 +8,7 @@ module.exports = function (grunt) {
         '_/js/lib/GSAP/TweenMax.js',
         '_/js/lib/GSAP/plugins/ScrollToPlugin.js',
         '_/js/lib/jquery.fitvids-1.1.0.js',
-        '_/js/app.main.js',
+        '_/js/airright.main.js',
         '_/js/components/*.js'
     ];
     // PROJECT CONFIG
@@ -17,7 +17,7 @@ module.exports = function (grunt) {
         sass: {
             dev: {
                 files: {
-                    '_/compiled/app.main.css': '_/css/app.main.scss'
+                    '_/compiled/airright.main.css': '_/css/airright.main.scss'
                 },
                 options: {
                     style: 'expanded',
@@ -30,7 +30,7 @@ module.exports = function (grunt) {
             },
             prod: {
                 files: {
-                    '_/css/app.main.css': '_/css/app.main.scss'
+                    '_/css/airright.main.css': '_/css/airright.main.scss'
                 },
                 options: {
                     style: 'compact',
@@ -44,8 +44,8 @@ module.exports = function (grunt) {
         concat: {
             prod: {
                 files: {
-                    '_/js/app.header.min.js': headerScripts,
-                    '_/js/app.footer.min.js': footerScripts
+                    '_/js/airright.header.min.js': headerScripts,
+                    '_/js/airright.footer.min.js': footerScripts
                 }
             },
         },
@@ -55,18 +55,18 @@ module.exports = function (grunt) {
                     banner: '/*! <%= pkg.name %> v<%= pkg.version %> | (c) <%= grunt.template.today("yyyy") %> Mervin Mfg. | mervin.com */\n'
                 },
                 files: {
-                    '_/css/app.main.min.css': ['_/css/app.main.css']
+                    '_/css/airright.main.min.css': ['_/css/airright.main.css']
                 }
             }
         },
         uglify: {
             options: {
-                banner: '/*! <%= pkg.name %> v<%= pkg.version %> | (c) <%= grunt.template.today("yyyy") %> Mervin Mfg. | mervin.com */\n'
+                banner: '/*! <%= pkg.name %> v<%= pkg.version %> | (c) <%= grunt.template.today("yyyy") %> Air Right Products and Services LLC. | airrightproducts.com */\n'
             },
             prod: {
                 files: {
-                    '_/js/app.header.min.js': ['_/js/app.header.min.js'],
-                    '_/js/app.footer.min.js': ['_/js/app.footer.min.js']
+                    '_/js/airright.header.min.js': ['_/js/airright.header.min.js'],
+                    '_/js/airright.footer.min.js': ['_/js/airright.footer.min.js']
                 }
             }
         },
