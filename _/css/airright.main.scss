@@ -1,0 +1,34 @@
+// ==========================================================================
+// MAIN.SCSS
+// ==========================================================================
+
+// Helpers
+@import "helpers/variables";
+@import "helpers/reset";
+@import "helpers/mixins";
+
+// Base
+@import "base/lists";
+@import "base/links";
+@import "base/media";
+@import "base/fonts";
+@import "base/utility";
+@import "base/typography";
+
+// Components
+@import "components/about";
+@import "components/footer";
+@import "components/global";
+@import "components/header";
+@import "components/home";
+@import "components/products-services-industries";
+@import "components/services";
+
+// Library
+@import "lib/bootstrap";
+@import "lib/owl-carousel";
+@import "lib/owl-theme-default";
+@import "lib/owl-theme-airright";
+
+// Modules
+@import "modules/featured-slider";

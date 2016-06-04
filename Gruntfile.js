@@ -8,8 +8,11 @@ module.exports = function (grunt) {
         '_/js/lib/GSAP/TweenMax.js',
         '_/js/lib/GSAP/plugins/ScrollToPlugin.js',
         '_/js/lib/jquery.fitvids-1.1.0.js',
+        '_/js/lib/jquery.unveil.js',
+        '_/js/lib/owl.carousel.js',
         '_/js/airright.main.js',
-        '_/js/components/*.js'
+        '_/js/components/*.js',
+        '_/js/modules/*.js'
     ];
     // PROJECT CONFIG
     grunt.initConfig({
