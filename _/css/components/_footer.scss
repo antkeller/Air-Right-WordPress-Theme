@@ -1,0 +1,83 @@
+// ==========================================================================
+// COMPONENTS/_FOOTER.SCSS
+// ==========================================================================
+
+footer {
+  padding-bottom: 20px;
+  background: $gray-dark;
+  color: $white;
+
+  nav {
+    padding-bottom: 20px;
+
+    li {
+      border-bottom: 1px solid $gray;
+
+      a {
+        color: $white;
+        display: block;
+        font-size: .875em;
+        text-decoration: none;
+        padding: 15px;
+        text-transform: uppercase;
+        text-align: center;
+
+        &:hover,
+        &:focus {
+          color: $white;
+          background: $gray;
+        }
+      }
+    }
+
+    li:nth-child(1) {
+      border-top: 1px solid $gray;
+    }
+  }
+
+  .copyright {
+    display: block;
+    line-height: 20px;
+    padding: 0 20px;
+    text-align: center;
+
+    span {
+      display: block;
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-medium) {
+  footer {
+    nav {
+      padding-top: 20px;
+
+      ul {
+        height: 30px;
+        margin: 0 auto;
+        text-align: center;
+
+        li {
+          display: inline-block;
+          border-bottom: 0;
+
+          a:hover,
+          a:focus {
+            background: $gray-dark;
+            text-decoration: underline;
+          }
+        }
+
+        li:nth-child(1) {
+          border-top: 0;
+        }
+      }
+    }
+
+    .copyright {
+      span {
+        display: inline;
+      }
+    }
+  }
+}

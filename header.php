@@ -3,8 +3,8 @@
  * The Header for our theme
  *
  * @package WordPress
- * @subpackage MervinMfg-WordPress-Theme-Template
- * @since Mervin Mfg WordPress Theme Template 1.0.0
+ * @subpackage Air-Right-WordPress-Theme
+ * @since Air Right WordPress Theme Template 1.0.0
  */
 ?><!doctype html>
 <!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" <?php language_attributes(); ?>> <![endif]-->
@@ -12,7 +12,7 @@
 <!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" <?php language_attributes(); ?>> <![endif]-->
 <!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" <?php language_attributes(); ?>> <![endif]-->
 <!--[if gt IE 9]><!--><html class="no-js" <?php language_attributes(); ?>><!--<![endif]-->
-<head id="mervinmfg-template" data-template-set="mervinmfg-wordpress-theme-template">
+<head id="airright-template" data-template-set="airright-wordpress-theme-template">
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<!--[if IE ]>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -29,12 +29,9 @@
 	<meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/_/img/social-icon.png" />
 	<meta property="og:type" content="website" />
 	<meta property="og:site_name" content="XXXXXXXXXX" />
-	<meta property="fb:app_id" content="XXXXXXXXXX"/>
 	<meta itemprop="name" content="<?php wp_title( '|', true, 'right' ); ?>" />
 	<meta itemprop="description" content="<?php bloginfo('description'); ?>" />
 	<meta itemprop="image" content="<?php echo get_template_directory_uri(); ?>/_/img/social-icon.png" />
-	<meta name="twitter:card" content="summary" />
-	<meta name="twitter:site" content="@XXXXXXXXXX" />
 	<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/_/img/favicon.ico" />
 	<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/_/img/apple-touch-icon-precomposed.png" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
@@ -48,10 +45,21 @@
 </head>
 <body <?php body_class(); ?>>
 	<div id="wrapper">
-		<header id="header" role="banner">
-			<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<div class="description"><?php bloginfo( 'description' ); ?></div>
-		</header>
-		<nav id="nav" role="navigation">
-			<?php wp_nav_menu( array('menu' => 'primary') ); ?>
+		<nav id="primary-navigation-mobile" class="site-navigation primary-navigation-mobile" role="navigation">
+			<!-- <a class="screen-reader-text skip-link" href="#content">Skip to content</a> -->
+			<?php wp_nav_menu( array( 'theme_location' => 'mobile', 'menu_class' => 'nav-menu' ) ); ?>
 		</nav>
+		<div class="wrapper-inside">
+			<header id="header" role="banner">
+				<div class="main-logo">
+					<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/_/img/air-right-logo.png" alt="Air Right Products and Services LLC Logo" /></a></h1>
+				</div><!-- .main-logo -->
+				<a id="primary-navigation" class="menu-toggle">
+				  <span>toggle menu</span>
+				</a>
+				<nav id="nav" class="primary-navigation-desktop" role="navigation">
+					<?php wp_nav_menu( array('theme_location' => 'primary', 'menu-class' => 'nav-menu' ) ); ?>
+				</nav>
+			</header>
+
+			<div id="main">

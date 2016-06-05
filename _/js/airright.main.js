@@ -11,11 +11,12 @@ AIRRIGHT.Main = {
 		var self = this;
     var $body = $('body');
     // mobile navigation menu toggle
-		var toggle = $(".menu-toggle");
-		toggle.on( "click", function(e) {
+		$('.menu-toggle').on('click', function(e) {
       e.preventDefault();
+      var $body = $('body');
       $(this).toggleClass("is-active");
-			$('.primary-navigation').toggleClass("active");
+			$('.primary-navigation-mobile').toggleClass("active");
+      $body.toggleClass('menu-visible');
 		});
     // lazy load product photos
     $('.item .item-image-wrapper img.lazy').unveil(0, function() {

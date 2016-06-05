@@ -1,0 +1,25 @@
+// ==========================================================================
+// COMPONENTS/_PRODUCTS-SERVICES-INDUSTRIES.SCSS
+// ==========================================================================
+
+.products,
+.services,
+.industries {
+  h1 {
+    padding-bottom: 20px;
+  }
+
+  .page-copy {
+    border-bottom: 1px solid $gray-light;
+    margin-bottom: 20px;
+  }
+
+  .item {
+    margin-bottom: 20px;
+
+    h3 {
+      padding-bottom: 10px;
+      padding-top: 5px;
+    }
+  }
+}
