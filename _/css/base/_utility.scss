@@ -1,79 +1,85 @@
-/* ==========================================================================
-   BASE/_UTILITY.SCSS
-   ========================================================================== */
+// ==========================================================================
+// BASE/_UTILITY.SCSS
+// ==========================================================================
 
 // Display
 .block {
-    display: block;
+  display: block;
 }
+
 .hide {
-    display: none;
+  display: none;
 }
+
 .offscreen {
-    display: block;
-    left: -999999px;
-    position: absolute;
-    top: -999999px;
+  display: block;
+  left: -999999px;
+  position: absolute;
+  top: -999999px;
 }
 
 // Clearfix
 .clearfix {
-    *zoom: 1;
+  *zoom: 1;
 }
+
 .clearfix:before, .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+  content: " "; /* 1 */
+  display: table; /* 2 */
 }
 
 .clearfix:after {
-    clear: both;
+  clear: both;
 }
 
 // LINES, HRS, BORDERS
 .hr {
-    border-top: 1px solid $gray;
-    display: block;
+  border-top: 1px solid $gray;
+  display: block;
+  // just a test
+  border-radius: 2px;
 
-    // just a test
-
-    border-radius: 2px;
-
-    hr {
-        display: none;
-    }
+  hr {
+    display: none;
+  }
 }
 
 // RESPONSIVE CHECK
 .responsive-check {
+  .breakpoint-small,
+  .breakpoint-medium,
+  .breakpoint-large {
+    display: none;
+  }
+}
+
+@media screen and (min-width: $breakpoint-small) {
+  .responsive-check .breakpoint-small {
+    display: block;
+  }
+}
+
+@media screen and (min-width: $breakpoint-medium) {
+  .responsive-check {
+    .breakpoint-small {
+      display: none;
+    }
+
+    .breakpoint-medium {
+      display: block;
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-large) {
+  .responsive-check {
     .breakpoint-small,
-    .breakpoint-medium,
+    .breakpoint-medium {
+      display: none;
+    }
+
     .breakpoint-large {
-        display: none;
+      display: block;
     }
-}
-@media screen and (min-width: $bp-small) {
-    .responsive-check .breakpoint-small {
-        display: block;
-    }
-}
-@media screen and (min-width: $bp-med) {
-    .responsive-check {
-        .breakpoint-small {
-            display: none;
-        }
-        .breakpoint-medium {
-            display: block;
-        }
-    }
-}
-@media screen and (min-width: $bp-large) {
-    .responsive-check {
-        .breakpoint-small,
-        .breakpoint-medium {
-            display: none;
-        }
-        .breakpoint-large {
-            display: block;
-        }
-    }
+  }
 }

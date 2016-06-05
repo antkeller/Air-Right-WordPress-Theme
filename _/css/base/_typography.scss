@@ -1,23 +1,35 @@
-/* ==========================================================================
-   BASE/_TYPOGRAPHY.SCSS
-   ========================================================================== */
+// ==========================================================================
+// BASE/_TYPOGRAPHY.SCSS
+// ==========================================================================
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 62.5%;
+    font-family: $font;
+    font-size: 1em;
+    line-height: 1.5;
+    // font-size: 62.5%;
 }
 
 // Headings
 h1, .h1   {
-    line-height: 1.2;
+  font-family: $font;
+  font-weight: 500;
+  font-size: 2em;
+  line-height: 1.2;
+
 }
 
 h2, .h2    {
-    line-height: 1.2;
+  font-family: $font;
+  font-weight: 500;
+  font-size: 1.75em;
+  line-height: 1.2;
 }
 
 h3, .h3   {
-    line-height: 1.2;
+  font-family: $font;
+  font-weight: 400;
+  font-size: 1.25em;
+  line-height: 1.2;
 }
 
 h4, .h4   {
@@ -38,20 +50,18 @@ h6, .h6    {
     font-weight: normal;
 }
 
-
 // Paragraphs
 p {
-    margin-bottom: $space;
+    margin-bottom: 20px;
 }
-
 
 // Blockquote
 blockquote {
     font-style:italic;
     border-left: 1px solid $gray;
     color: $gray;
-    padding-left: $pad;
-    margin-bottom: $space;
+    padding-left: 20px;
+    margin-bottom: 20px;
 }
 
 
