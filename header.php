@@ -1,7 +1,5 @@
 <?php
 /**
- * The Header for our theme
- *
  * @package WordPress
  * @subpackage Air-Right-WordPress-Theme
  * @since Air Right WordPress Theme Template 1.0.0
@@ -17,19 +15,19 @@
 	<!--[if IE ]>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<![endif]-->
-	<title><?php wp_title( '|', true, 'right' ); ?></title>
+	<title><?php wp_title(''); ?></title>
 	<meta name="description" content="<?php bloginfo('description'); ?>" />
 	<meta name="keywords" content="XXXXXXXXXX" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="google-site-verification" content="XXXXXXXXXX" />
+	<meta name="google-site-verification" content="6e51HIeheAyfgAGnvLCq2WYQQ6MBFW0rd1xfzCImXBc" />
 <?php if (is_search()) echo "\t" . '<meta name="robots" content="noindex, nofollow" />' . "\n"; ?>
-	<meta property="og:title" content="<?php wp_title( '|', true, 'right' ); ?>" />
+	<meta property="og:title" content="<?php wp_title(''); ?>" />
 	<meta property="og:description" content="<?php bloginfo('description'); ?>" />
 	<meta property="og:url" content="<?php the_permalink(); ?>" />
 	<meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/_/img/social-icon.png" />
 	<meta property="og:type" content="website" />
 	<meta property="og:site_name" content="XXXXXXXXXX" />
-	<meta itemprop="name" content="<?php wp_title( '|', true, 'right' ); ?>" />
+	<meta itemprop="name" content="<?php wp_title(''); ?>" />
 	<meta itemprop="description" content="<?php bloginfo('description'); ?>" />
 	<meta itemprop="image" content="<?php echo get_template_directory_uri(); ?>/_/img/social-icon.png" />
 	<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/_/img/favicon.ico" />
@@ -62,4 +60,4 @@
 				</nav>
 			</header>
 
-			<div id="main">
+			<div id="main" class="site-main">
