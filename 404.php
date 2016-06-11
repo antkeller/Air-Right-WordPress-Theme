@@ -3,14 +3,15 @@
  * The template for displaying 404 pages (Not Found)
  *
  * @package WordPress
- * @subpackage MervinMfg-WordPress-Theme-Template
- * @since Mervin Mfg WordPress Theme Template 1.0.0
+ * @subpackage Air-Right-WordPress-Theme
  */
 
 get_header(); ?>
 
-	<h2>Error 404 - Page Not Found</h2>
-
-<?php get_sidebar(); ?>
+	<section class="error-404 container-fluid">
+		<div class="section-content row">
+			<h2>Error 404<span>Page Not Found</span></h2>
+		</div>
+	</section>
 
 <?php get_footer(); ?>
