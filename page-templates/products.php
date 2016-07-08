@@ -27,13 +27,13 @@
 							$description = get_the_content();
               $image = get_field('airright_item_photo');
 					?>
-					<li class="item row">
+					<li itemscope itemtype="http://schema.org/Product" class="item row">
             <div class="item-image-wrapper col-xs-12 col-sm-5">
               <img src="<?php echo get_template_directory_uri(); ?>/_/img/square.gif" data-src="<?php echo $image['url']; ?>" alt="<?php echo $title; ?>" class="lazy" />
             </div><!-- .item-image-wrapper -->
             <div class="item-copy-wrapper col-xs-12 col-sm-7">
-              <h3><?php echo $title; ?></h3>
-              <p class="item-copy"><?php echo $description; ?></p>
+              <h2 itemprop="name"><?php echo $title; ?></h2>
+              <p itemprop="description" class="item-copy"><?php echo $description; ?></p>
             </div><!-- .item-copy-wrapper -->
           </li>
 

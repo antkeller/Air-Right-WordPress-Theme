@@ -12,8 +12,8 @@ body {
 // Headings
 h1, .h1   {
   font-family: $font;
-  font-weight: 500;
-  font-size: 2em;
+  font-weight: 700;
+  font-size: 1.75em;
   line-height: 1.2;
 
 }
@@ -21,52 +21,53 @@ h1, .h1   {
 h2, .h2    {
   font-family: $font;
   font-weight: 500;
-  font-size: 1.75em;
+  font-size: 1.25em;
   line-height: 1.2;
 }
 
 h3, .h3   {
   font-family: $font;
-  font-weight: 400;
-  font-size: 1.25em;
+  font-weight: 500;
+  font-size: 1em;
   line-height: 1.2;
 }
 
-h4, .h4   {
-
-}
-
-h5, .h5 {
-
-}
-
-h6, .h6    {
-
-}
-
-
 // Subheadings
 .subheading {
-    font-weight: normal;
+  font-weight: normal;
 }
 
 // Paragraphs
 p {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 // Blockquote
 blockquote {
-    font-style:italic;
-    border-left: 1px solid $gray;
-    color: $gray;
-    padding-left: 20px;
-    margin-bottom: 20px;
+  font-style:italic;
+  border-left: 1px solid $gray;
+  color: $gray;
+  padding-left: 20px;
+  margin-bottom: 20px;
 }
-
 
 // Others
 abbr {
-    border-bottom: 1px dotted $gray;
-    cursor: help;
+  border-bottom: 1px dotted $gray;
+  cursor: help;
+}
+
+@media screen and (min-width: $breakpoint-medium) {
+  h1, .h1   {
+    font-size: 1.75em;
+
+  }
+
+  h2, .h2    {
+    font-size: 1.5em;
+  }
+
+  h3, .h3   {
+    font-size: 1.5em;
+  }
 }
