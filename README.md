@@ -1,4 +1,4 @@
-# _Mervin Mfg. - WordPress Theme Template_
+# _Air Right Products. - WordPress Theme Template_
 ## Beta Version
 
 **Starter theme template for custom Wordpress theme development.**
